@@ -13,6 +13,8 @@ publish = false
 targets = ["x86_64-unknown-linux-gnu"]
 
 [dependencies]
+log = "0.4"
+secp256k1 = "0.29.0"
 codec = { features = [
 	"derive",
 ], workspace = true }
@@ -22,6 +24,8 @@ scale-info = { features = [
 frame-benchmarking = { optional = true, workspace = true }
 frame-support.workspace = true
 frame-system.workspace = true
+sp-core = { default-features = false, workspace = true }
+sp-io = { default-features = false, workspace = true }
 
 [dev-dependencies]
 sp-core = { default-features = true, workspace = true }
