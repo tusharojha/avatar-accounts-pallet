@@ -1,3 +1,45 @@
+# Avatar Accounts Pallet
+
+## Overview
+
+The Avatar Accounts pallet is a Substrate-based tool designed to bridge Ethereum and Substrate chains seamlessly. It allows Ethereum users to interact with Substrate chains without needing to install additional software or download a new wallet.
+
+## How It Works
+
+1. **Keyless Substrate Account Creation**: 
+   - The pallet creates a keyless Substrate account derived from the user's Ethereum (EVM) address. This account is used for making transaction calls on the Substrate chain.
+
+2. **Transaction Processing**:
+   - **Step 1**: A decentralized application (dapp) initiates a transaction by creating a vector of calls for the Substrate chain.
+   - **Step 2**: This vector of calls is hashed using the Keccak-256 algorithm. The dapp also generates a typed data structure that the user needs to sign using their EVM-based wallet.
+   - **Step 3**: The dapp sends the signed message and the calls vector to the pallet method.
+   - **Step 4**: The pallet verifies the signature, nonce, and other parameters to ensure that the user intends to perform the action.
+
+3. **Transaction Execution**:
+   - The pallet then creates a keyless Substrate account associated with the EVM externally owned account (EOA).
+   - It dispatches the calls from the newly created keyless Substrate account on behalf of the user.
+
+## Key Features
+
+- **Seamless Integration**: Users can interact with Substrate chains directly using their Ethereum wallets.
+- **EIP Compliance**: Supports the latest Ethereum Improvement Proposals (EIPs) for signing typed data.
+- **No Additional Setup**: Users do not need to install or configure a new wallet to interact with Substrate chains.
+
+## Usage
+
+1. **For Dapp Developers**: Implement the pallet to enable transactions from Ethereum-based wallets without requiring users to handle Substrate-specific setups.
+2. **For Users**: Sign the typed data structure from your EVM wallet to authorize transactions on Substrate chains.
+
+## Getting Started
+
+To integrate the Avatar Accounts pallet into your Substrate chain or dapp, refer to the detailed documentation provided in the repository. Follow the setup instructions to configure the pallet and start leveraging its capabilities.
+
+---
+
+Feel free to adjust the sections according to your specific needs and the details of your project.
+
+---
+
 # Substrate Node Template
 
 A fresh [Substrate](https://substrate.io/) node, ready for hacking :rocket:
