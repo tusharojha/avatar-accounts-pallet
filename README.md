@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Avatar Accounts pallet is a Substrate-based tool designed to bridge Ethereum and Substrate chains seamlessly. It allows Ethereum users to interact with Substrate chains without needing to install additional software or download a new wallet.
+The Avatar Accounts pallet is a Substrate-based tool designed to enable Ethereum Users interact with Substrate chains seamlessly without needing to install additional software or download a new wallet.
 
 ## How It Works
 
@@ -22,7 +22,7 @@ The Avatar Accounts pallet is a Substrate-based tool designed to bridge Ethereum
 ## Key Features
 
 - **Seamless Integration**: Users can interact with Substrate chains directly using their Ethereum wallets.
-- **EIP Compliance**: Supports the latest Ethereum Improvement Proposals (EIPs) for signing typed data.
+- **EIP721 Compliance**: Supports the latest Ethereum Improvement Proposals (EIPs) for signing typed data.
 - **No Additional Setup**: Users do not need to install or configure a new wallet to interact with Substrate chains.
 
 ## Usage
@@ -33,6 +33,8 @@ The Avatar Accounts pallet is a Substrate-based tool designed to bridge Ethereum
 ## Getting Started
 
 To integrate the Avatar Accounts pallet into your Substrate chain or dapp, refer to the detailed documentation provided in the repository. Follow the setup instructions to configure the pallet and start leveraging its capabilities.
+
+This is built on top of the existing solochain template (for quick e2e testing), but we plan to move it into a pallet structure that would mean any substrate chain (parachains / solochains) will be able to use this pallet to onboard users from ethereum with no sweat. 
 
 ---
 
